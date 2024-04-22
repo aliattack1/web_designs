@@ -11,13 +11,11 @@ function eye (){
         console.log("to c")
         s.className = "cl"
         s.innerHTML = c
-        p.type="text"
 
     }else if (s.className == "cl") {
         console.log("to b")
         s.className = "op"
         s.innerHTML = b
-        p.type="password"
     }
 
 }
