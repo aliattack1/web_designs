@@ -7,14 +7,16 @@ function eye () {
 
     if (s.className == "op") {
         console.log("to c")
-        p.className = "cl"
-        p.innerHTML = c
+        s.className = "cl"
+        s.innerHTML = c
+        p[0].setAttribute("type", "password");
 
     } else if (s.className == "cl") {
         console.log("to b")
-        p.className = "op"
-        p.innerHTML = b
+        s.className = "op"
+        s.innerHTML = b
+        p[0].setAttribute("type", "text");
     }
 
 }
-document.getElementsByName("pass").addEventListener("click", eye);
+document.getElementById("ey").addEventListener("click", eye)
